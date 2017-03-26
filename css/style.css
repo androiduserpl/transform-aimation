@@ -19,15 +19,35 @@ img {
 
 #truskawka4 {
     animation-name: stretch;
+    animation-duration: 2s;
+}
+
+#truskawka5 {
+    animation-name: second-stretch;
     animation-duration: 3s;
+    width: 100%;
 }
 
 @keyframes stretch {
-    forom {
-        width: 100px;
+    from {
+        width: 50%;
     }
     
     to {
-        width: 200px;
+        width: 100%;
+    }
+}
+
+@keyframes second-stretch {
+    0% {
+        width: 50%;
+    }
+    
+    50% {
+        width: 100%;
+    }
+    
+    100% {
+        width: 50%;
     }
 }
